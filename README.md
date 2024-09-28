@@ -1,0 +1,2 @@
+# Server-Calculator
+ The server tip-out calculator is a tool designed to help servers quickly and accurately determine the tip-out amounts they owe to support staff, such as bussers, bartenders, and food runners, based on their sales. This calculator takes into account the total sales the server made during their shift and applies customizable percentages for each support role to calculate how much should be tipped out.
