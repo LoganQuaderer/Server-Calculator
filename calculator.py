@@ -23,7 +23,17 @@ elif house_owes == 'y':
     while True:
         try:
             amount_owed = float(input("How much does the house owe you? $"))
-            print(f"The house owes you ${amount_owed:.2f}")
+            
+            # Subtract busser tipout from the amount owed
+            final_amount = amount_owed - busser_tipout
+            
+            if final_amount > 0:
+                print(f"After subtracting the busser tipout, the house owes you ${final_amount:.2f}")
+            elif final_amount < 0:
+                print(f"After subtracting the busser tipout, you owe the house ${abs(final_amount):.2f}")
+            else:
+                print("After subtracting the busser tipout, everything is settled. No money is owed.")
+            
             break
         except ValueError:
             print("Invalid input. Please enter a numeric value.")
